@@ -1,4 +1,4 @@
-# Face Recognition using Tensorflow [![Build Status][travis-image]][travis]
+# Rolex Reference Recognition using Tensorflow-keras [![Build Status][travis-image]][travis]
 
 [travis-image]: http://travis-ci.org/davidsandberg/facenet.svg?branch=master
 [travis]: http://travis-ci.org/davidsandberg/facenet
