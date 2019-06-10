@@ -28,12 +28,14 @@ To install all the requirements for the project run
 In the root directory. After the modules have been installed you can train the model by using python
 
 	python3 train.py
+	
+In the root directory. you can test the model by using python
+
+	python3 test.py	
 
 ## Training data
-The [Rolex Wrist Watch](https://drive.google.com/file/d/14h6HSvRvcmU3tfWccJflhZngLb_5GdUl/view) dataset has been used for training. This training set consists of total of nearly 13k images over 697 identities of Rolex watch. A csv file [Rolex CSV] which contains all the IDs of the Rolex images and References of the Rolex watch.
+The [Rolex Wrist Watch](https://drive.google.com/file/d/14h6HSvRvcmU3tfWccJflhZngLb_5GdUl/view) dataset has been used for training. This training set consists of total of nearly 13k images over 697 identities of Rolex watch. A csv file [Rolex csv] which contains all the IDs of the Rolex images and References of the Rolex watch.
 
-## Running training
-Currently, the best results are achieved by training the model using softmax loss. Details on how to train a model using softmax loss on the CASIA-WebFace dataset can be found on the page [Classifier training of Inception-ResNet-v1](https://github.com/davidsandberg/facenet/wiki/Classifier-training-of-inception-resnet-v1) and .
 
 ## Performance
 At first we try to visualize the Rolex dataset in t-sne for 32 categories using ResNet50 pretrained model. visualizing graph is given bellow:
