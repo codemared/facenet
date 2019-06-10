@@ -13,7 +13,7 @@ The code is tested using Tensorflow 1.12.0 and keras 2.2.4 under Ubuntu 18.04 wi
 ## Pre-trained models
 | Model name      | accuracy | Training dataset | Architecture |
 |-----------------|--------------|------------------|-------------|
-| [20180408-102900](https://drive.google.com/open?id=1R77HmFADxe87GmoLwzfgMu_HY0IhcyBz) | 0.9905        | Rolex Wrist Watch    | [Resnet50](https://github.com/davidsandberg/facenet/blob/master/src/models/inception_resnet_v1.py) |
+| [20180408-102900](https://drive.google.com/open?id=1R77HmFADxe87GmoLwzfgMu_HY0IhcyBz) | 0.4934034        | Rolex Wrist Watch    | [Resnet50](https://github.com/davidsandberg/facenet/blob/master/src/models/inception_resnet_v1.py) |
 
 
 ## Inspiration
@@ -30,7 +30,7 @@ In the root directory. After the modules have been installed you can train the m
 	python3 train.py
 
 ## Training data
-The [Rolex Wrist Watch](http://www.cbsr.ia.ac.cn/english/CASIA-WebFace-Database.html) dataset has been used for training. This training set consists of total of nearly 13k images over 697 identities of Rolex watch. A csv file [Rolex CSV] which contains all the identities of the Rolex images and 
+The [Rolex Wrist Watch](http://www.cbsr.ia.ac.cn/english/CASIA-WebFace-Database.html) dataset has been used for training. This training set consists of total of nearly 13k images over 697 identities of Rolex watch. A csv file [Rolex CSV] which contains all the IDs of the Rolex images and References of the Rolex watch.
 
 ## Running training
 Currently, the best results are achieved by training the model using softmax loss. Details on how to train a model using softmax loss on the CASIA-WebFace dataset can be found on the page [Classifier training of Inception-ResNet-v1](https://github.com/davidsandberg/facenet/wiki/Classifier-training-of-inception-resnet-v1) and .
