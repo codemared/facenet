@@ -4,7 +4,7 @@
 [travis]: http://travis-ci.org/davidsandberg/facenet
 
 This is a TensorFlow implementation of the face recognizer described in the paper
-["FaceNet: A Unified Embedding for Face Recognition and Clustering"](http://arxiv.org/abs/1503.03832). The project also uses ideas from the paper ["Deep Face Recognition: A survey"](http://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf)
+["FaceNet: A Unified Embedding for Face Recognition and Clustering"](http://arxiv.org/abs/1503.03832). The project also uses ideas from the paper ["Deep Face Recognition: A survey"](https://arxiv.org/pdf/1804.06655.pdf), ["DEEP METRIC LEARNING USING TRIPLET NETWORK"](https://arxiv.org/pdf/1412.6622.pdf), ["How to Train Triplet Networks with 100K Identities?"](https://arxiv.org/pdf/1709.02940.pdf)
 
 ## Compatibility
 The code is tested using Tensorflow 1.12.0 and keras 2.2.4 under Ubuntu 18.04 with Python 2.7 and Python 3.6.
