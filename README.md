@@ -13,8 +13,7 @@ The code is tested using Tensorflow 1.12.0 and keras 2.2.4 under Ubuntu 18.04 wi
 ## Pre-trained models
 | accuracy | Training dataset | Architecture |
 |--------------|------------------|-------------|
-| [20180408-102900](https://drive.google.com/open?id=1R77HmFADxe87GmoLwzfgMu_HY0IhcyBz) | 0.4934034        | Rolex Wrist Watch    | [Resnet50](https://github.com/davidsandberg/facenet/blob/master/src/models/inception_resnet_v1.py) |
-
+| 0.4934034        | Rolex Wrist Watch    | Resnet50|
 
 ## Inspiration
 The code is heavily inspired by the [Face recognition](https://github.com/mjDelta/face-recognition-keras) implementation.
