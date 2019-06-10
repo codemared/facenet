@@ -36,6 +36,10 @@ The [Rolex Wrist Watch](http://www.cbsr.ia.ac.cn/english/CASIA-WebFace-Database.
 Currently, the best results are achieved by training the model using softmax loss. Details on how to train a model using softmax loss on the CASIA-WebFace dataset can be found on the page [Classifier training of Inception-ResNet-v1](https://github.com/davidsandberg/facenet/wiki/Classifier-training-of-inception-resnet-v1) and .
 
 ## Performance
-The accuracy on LFW for the model [20180402-114759](https://drive.google.com/open?id=1EXPBSXwTaqrSC0OhUdXNmKSh9qJUQ55-) is 0.99650+-0.00252. A description of how to run the test can be found on the page [Validate on LFW](https://github.com/davidsandberg/facenet/wiki/Validate-on-lfw). 
+At first we try to visualize the Rolex dataset in t-sne for 32 categories using ResNet50 pretrained model. visualizing graph is given bellow:
+
+And then apply triplet net on top of ResNet50 pretrained model for 32 categories. we found some impressive performance which given bellow:
+
+Finally we try to work with those categories of the Rolex watch which have at least 10 samples without oversampling but could not complete the training. After few ours training we found nearly 50% accuracy. 
 
 ## Farther performance improvement
