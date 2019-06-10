@@ -38,8 +38,9 @@ Currently, the best results are achieved by training the model using softmax los
 ## Performance
 At first we try to visualize the Rolex dataset in t-sne for 32 categories using ResNet50 pretrained model. visualizing graph is given bellow:
 
-And then apply triplet net on top of ResNet50 pretrained model for 32 categories. we found some impressive performance which given bellow:
+And then apply triplet net on top of ResNet50 pretrained model for 32 categories. we found some impressive performance which is given bellow:
 
 Finally we try to work with those categories of the Rolex watch which have at least 10 samples without oversampling but could not complete the training. After few ours training we found nearly 50% accuracy. 
 
 ## Farther performance improvement
+There are lots of scope for improvement. First of all, using oversampling or increase the number of samples in the categories which have less samples. We couldn't train our model for enough time, if the training period lasts long the model may learn more.  And lastly, we applied knn algorithms for classification but cosFace technique may work well in this case.
