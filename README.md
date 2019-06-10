@@ -21,8 +21,18 @@ NOTE: If you use any of the models, please do not forget to give proper credit t
 ## Inspiration
 The code is heavily inspired by the [OpenFace](https://github.com/cmusatyalab/openface) implementation.
 
+## How to use
+
+To install all the requirements for the project run
+
+	pip install -r requirements.txt
+
+In the root directory. After the modules have been installed you can train the model by using python
+
+	python3 train.py
+
 ## Training data
-The [CASIA-WebFace](http://www.cbsr.ia.ac.cn/english/CASIA-WebFace-Database.html) dataset has been used for training. This training set consists of total of 453 453 images over 10 575 identities after face detection. Some performance improvement has been seen if the dataset has been filtered before training. Some more information about how this was done will come later.
+The [Rolex Wrist Watch](http://www.cbsr.ia.ac.cn/english/CASIA-WebFace-Database.html) dataset has been used for training. This training set consists of total of nearly 13k images over 697 identities of Rolex watch. Some performance improvement has been seen if the dataset has been filtered before training. Some more information about how this was done will come later.
 The best performing model has been trained on the [VGGFace2](https://www.robots.ox.ac.uk/~vgg/data/vgg_face2/) dataset consisting of ~3.3M faces and ~9000 classes.
 
 ## Running training
