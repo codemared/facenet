@@ -17,7 +17,7 @@ The code is tested using Tensorflow 1.12.0 and keras 2.2.4 under Ubuntu 18.04 wi
 
 
 ## Inspiration
-The code is heavily inspired by the [OpenFace](https://github.com/cmusatyalab/openface) implementation.
+The code is heavily inspired by the [Face recognition](https://github.com/mjDelta/face-recognition-keras) implementation.
 
 ## How to use
 
@@ -30,13 +30,12 @@ In the root directory. After the modules have been installed you can train the m
 	python3 train.py
 
 ## Training data
-The [Rolex Wrist Watch](http://www.cbsr.ia.ac.cn/english/CASIA-WebFace-Database.html) dataset has been used for training. This training set consists of total of nearly 13k images over 697 identities of Rolex watch. Some performance improvement has been seen if the dataset has been filtered before training. Some more information about how this was done will come later.
-The best performing model has been trained on the [VGGFace2](https://www.robots.ox.ac.uk/~vgg/data/vgg_face2/) dataset consisting of ~3.3M faces and ~9000 classes.
+The [Rolex Wrist Watch](http://www.cbsr.ia.ac.cn/english/CASIA-WebFace-Database.html) dataset has been used for training. This training set consists of total of nearly 13k images over 697 identities of Rolex watch. A csv file [Rolex CSV] which contains all the identities of the Rolex images and 
 
 ## Running training
 Currently, the best results are achieved by training the model using softmax loss. Details on how to train a model using softmax loss on the CASIA-WebFace dataset can be found on the page [Classifier training of Inception-ResNet-v1](https://github.com/davidsandberg/facenet/wiki/Classifier-training-of-inception-resnet-v1) and .
 
 ## Performance
-The accuracy on LFW for the model [20180402-114759](https://drive.google.com/open?id=1EXPBSXwTaqrSC0OhUdXNmKSh9qJUQ55-) is 0.99650+-0.00252. A description of how to run the test can be found on the page [Validate on LFW](https://github.com/davidsandberg/facenet/wiki/Validate-on-lfw). Note that the input images to the model need to be standardized using fixed image standardization (use the option `--use_fixed_image_standardization` when running e.g. `validate_on_lfw.py`).
+The accuracy on LFW for the model [20180402-114759](https://drive.google.com/open?id=1EXPBSXwTaqrSC0OhUdXNmKSh9qJUQ55-) is 0.99650+-0.00252. A description of how to run the test can be found on the page [Validate on LFW](https://github.com/davidsandberg/facenet/wiki/Validate-on-lfw). 
 
 ## Farther performance improvement
